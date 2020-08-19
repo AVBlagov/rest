@@ -24,7 +24,7 @@ type ErrorMessage struct {
 
 var Items []Item
 
-//GET request for /articles
+//GET
 func GetAllItems(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Hint: getAllItems woked.....")
 	json.NewEncoder(w).Encode(Items)
